@@ -1,0 +1,45 @@
+/* Slider.css */
+.slider-container {
+    width: 100%;
+    height: 30vh; /* 30% of the viewport height */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider img {
+    width: 100vw ;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire slider */
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
