@@ -8,9 +8,9 @@ const OverlayImage = (props) => (
       style={{ position: "absolute", width: "200px" }}
     >
   {props.text}
-    </div>
+      </div>
     {console.log(props.scale)}
-    <img src={props.src} className="img" style={{scale: props.scale?.toString() }}/>
+    <img src={props.src} className="img" style={{scale: props.scale?.toString(), opacity : props.showImg ? '1':'0' }}/>
   </div>
 );
 

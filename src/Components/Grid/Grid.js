@@ -38,13 +38,10 @@ const Grid = (props) => {
 src:'https://tax.thomsonreuters.com/content/dam/ewp-m/images/tax/en/photography/tr1130923-2500x1406.jpg.transform/rect-768/q90/image.jpg',
 scale:2
     }]
-    {Data.map(data=>{
-        <OverlayImage {...data}/>
-   })}
     console.log(getColumns(3))
     return <div className='grid-container' style={{display:'grid', gridTemplateColumns:getColumns(dimensions)}}>
-        {Data.map(data=>{
-             return <div className="overlay-container" ><OverlayImage {...data}/></div>
+        {Data.map((data, index)=>{
+             return <div className="overlay-container" style={{ background: (index%2 === 0 ? '#3498db' : '#9b59b6') }}><OverlayImage {...data}/></div>
         })}
     </div>
 }

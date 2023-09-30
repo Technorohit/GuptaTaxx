@@ -52,18 +52,18 @@ function App() {
         style={{
           background: "#f9f9f9",
           display: "flex",
-          justifyContent: "space-around",
+          justifyContent: "center",
           alignItems: "center",
           padding: "50px 10px" ,
-          width:'40%',
           margin:'auto'
         }}
       >
-       <OverlayImage src="https://images.pexels.com/photos/6863250/pexels-photo-6863250.jpeg?auto=compress&cs=tinysrgb&w=260" text={"We are providing all types of Accounting , Financial and Tax   services like, GST, TDS, Income Tax, Corporate Tax, Advance Tax     etc."}/>
+       <OverlayImage src="https://images.pexels.com/photos/6863250/pexels-photo-6863250.jpeg?auto=compress&cs=tinysrgb&w=260" 
+       text={"We are providing all types of Accounting , Financial and Tax   services like, GST, TDS, Income Tax, Corporate Tax, Advance Tax etc."} showImg={true}/>
 
 
-        <div className="text" style={{ width: "50%" }}>
-         <div style={{color:'#ecf0f1',fontWeight:'600px', padding:'30px', width:'80%', margin:'10px', borderRadius:'10px', backgroundColor:'#7f8c8d'}}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
+        <div className="text" style={{ width: "200px", marginLeft:'150px' }}>
+         <div style={{color:'#ecf0f1',fontWeight:'600px', padding:'30px', width:'200px', margin:'10px', borderRadius:'10px', backgroundColor:'#7f8c8d'}}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
           volutpat tellus, non facilisis ante. In hac habitasse platea dictumst.
           Nulla facilisi. Maecenas euismod diam et risus malesuada hendrerit.
           Nunc et diam non libero lacinia ultrices id vel libero. Sed vel
